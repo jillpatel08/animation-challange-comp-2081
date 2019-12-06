@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* css Document */
+
+.cat-img{
+    position: relative; 
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    filter: grayscale(.8);
+    animation: bloom ease-in-out 1s forwards infinite;
+}
+h1{
+    
+    font-size: 600%;
+    animation-name: head;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+h2{
+    font-size: 600%;
+    animation-name: head;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+p{
+    animation:colorchange 2s infinite;
+}
+@keyframes head {
+    0%{
+        font-size:600%;
+        opacity:1;
+    }
+    25%{
+        font-size:570%;
+        opacity:0;
+    }
+    50%{
+        font-size:600%;
+        opacity:1;
+    }
+    65%{
+        font-size:570%;
+        opacity:0;
+    }
+    80%{
+        font-size:600%;
+        opacity:1;
+    }
+    90%{
+        font-size:570%;
+        opacity:0;
+    }
+    100%{
+        font-size:600%;
+        opacity:1;
+    }
+}
+@keyframes colorchange{
+    0%{
+        color:cyan;
+    }
+    25%{
+        color:darkorange;
+    }
+    50%{
+        color:darkred;
+    }
+    100%{
+        color: forestgreen;
+    }
+}
+@keyframes bloom {
+	0% {
+        opacity: .5;
+        background: rgba(213,156,34,.2);
+		filter: grayscale(.8);
+	}
+	40% {
+        opacity: 1;
+        background: rgba(213,34,160,.2);
+		filter: grayscale(.5);
+	}
+	100% {
+		filter: grayscale(0);
+	}
+}
